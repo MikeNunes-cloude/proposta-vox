@@ -160,18 +160,76 @@
 
   @media(max-width:900px){
     .nav .links{display:none}
-    .inner{padding:22px 22px}
-    .hero-mid{grid-template-columns:1fr;gap:30px}
-    .hero-fig{min-height:380px;order:-1}
+    .nav .inner{padding:13px 20px}
+    .nav .cta{font-size:11px;padding:9px 14px}
+    .inner{padding:22px 20px}
     .tickers{display:none}
     .obj-grid{grid-template-columns:1fr;gap:22px;align-items:start}
-    .prow{grid-template-columns:56px 1fr;gap:8px 16px}
-    .prow .pd{grid-column:2}
+    .prow{grid-template-columns:52px 1fr;gap:6px 14px;padding:20px 4px}
+    .prow .pn{font-size:26px}
     .prow .pmeta{display:none}
+    .prow:hover{padding-left:8px}
     .icard .row1{grid-template-columns:1fr}
-    .price-box{text-align:left}
-    .icard .row2{grid-template-columns:1fr}
-    .band .cut{width:64vw}
+    .price-box{text-align:left;margin-top:8px}
+    .icard .row2{grid-template-columns:1fr;padding:10px 24px 20px}
+    .icard .row1{padding:26px 24px}
+    .band .cut{width:70vw}
+  }
+
+  /* mobile phones */
+  @media(max-width:620px){
+    .hero{min-height:auto}
+    .hero .inner{padding:26px 20px 22px}
+    .hero-mid{display:flex;flex-direction:column;gap:22px}
+    .hero h1{font-size:44px;line-height:0.9;letter-spacing:-0.03em}
+    .hero h1 .thin{-webkit-text-stroke-width:1.4px}
+    .hero .lead{margin-top:16px;font-size:15px}
+    .hero-fig{width:100%;aspect-ratio:auto;height:58vh;min-height:340px;max-height:460px;order:2}
+    .bartop{flex-direction:row;gap:14px}
+    .bartop .mono{font-size:10px}
+    .barbot{flex-wrap:wrap;gap:8px 16px}
+
+    .slab-red .inner{padding:52px 20px}
+    .slab-red .tag{letter-spacing:0.18em}
+
+    .statement .inner{padding:52px 20px}
+    .statement p{font-size:27px;line-height:1.08}
+
+    .obj .inner{padding:44px 20px 52px}
+    .key{width:34px;height:34px;font-size:14px;border-radius:6px;box-shadow:0 3px 0 #000,inset 0 1px 0 rgba(255,255,255,0.14)}
+    .keys{gap:6px;margin:6px 0 30px}
+    .obj h2{font-size:34px}
+
+    .plano .inner{padding:46px 20px 30px}
+    .plano-head{flex-direction:column;align-items:flex-start;gap:14px}
+    .plano-head h2{font-size:52px}
+    .plano-head .mono{text-align:left!important;max-width:100%}
+    .prow{grid-template-columns:44px 1fr;align-items:start}
+    .prow .pn{font-size:22px;padding-top:2px}
+    .prow h3{font-size:20px}
+    .prow .pd{grid-column:2;font-size:13.5px;margin-top:2px}
+
+    .band .stack{padding:26px 0}
+    .band .line{font-size:74px}
+    .band .cut{width:74vw}
+
+    .invest .inner{padding:48px 20px}
+    .invest-head{flex-direction:column;align-items:flex-start;gap:12px}
+    .invest-head h2{font-size:46px}
+    .invest-head .mono{text-align:left!important;max-width:100%}
+    .icard h3{font-size:28px}
+    .price{font-size:46px}
+    .ibtn{font-size:15px;padding:20px 16px}
+
+    .comp .inner{padding:56px 20px}
+    .comp p.big{font-size:28px;line-height:1.06}
+    .comp .small{font-size:15.5px}
+
+    .cta .inner{padding:60px 20px 26px}
+    .cta h2{font-size:50px}
+    .cta .ctabtn{font-size:15px;padding:17px 26px}
+    .cta .foot{gap:12px}
+    .cta .foot .mono{font-size:10px}
   }
 </style>
 </head>
