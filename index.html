@@ -4,355 +4,308 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>VOX · Plano de Ação — Dr. Fábio Tranches</title>
-<link rel="icon" type="image/png" href="logo-vox.png">
+<title>VOX · Proposta — Dr. Fábio Tranches</title>
+<link rel="icon" type="image/png" href="logo.png">
 <meta property="og:title" content="VOX · Posicionamento Estratégico — Dr. Fábio Tranches">
-<meta property="og:description" content="Construindo uma marca que transcende a odontologia. Plano Executive Branding preparado especialmente para o Dr. Fábio Tranches.">
+<meta property="og:description" content="Construindo uma marca que transcende a odontologia. Plano Executive Branding para o Dr. Fábio Tranches.">
 <meta property="og:image" content="dr-portrait.jpg">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #0A0708;
-    --texto: #F2EEEC;
-    --suave: #9C9498;
-    --laranja: #F0552A;
-    --laranja2: #FF6A3D;
-    --brasa: #C42D14;
-    --vermelho: #E0301A;
-    --card: rgba(255,255,255,0.035);
-    --borda: rgba(255,255,255,0.09);
+  :root{
+    --bg:#EAE8E5;
+    --surface:#F6F5F3;
+    --white:#FFFFFF;
+    --ink:#17140F;
+    --muted:#726C64;
+    --line:rgba(23,20,15,0.12);
+    --line-soft:rgba(23,20,15,0.07);
+    --red:#E5251F;
   }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    background: var(--bg); color: var(--texto);
-    -webkit-font-smoothing: antialiased; overflow-x: hidden; line-height: 1.6;
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,sans-serif;
+    background:var(--bg);color:var(--ink);
+    -webkit-font-smoothing:antialiased;line-height:1.65;font-weight:400;
+    overflow-x:hidden;
   }
-  ::selection { background: var(--laranja); color: #fff; }
-  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 28px; position: relative; z-index: 2; }
+  ::selection{background:var(--red);color:#fff}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 40px;position:relative}
 
-  .arco-topo {
-    position: absolute; z-index: 0; pointer-events: none;
-    top: -62vw; left: 50%; transform: translateX(-50%);
-    width: 160vw; height: 80vw; min-width: 1400px; min-height: 700px; border-radius: 50%;
-    background: radial-gradient(closest-side, rgba(240,85,42,0.0) 60%, rgba(240,85,42,0.30) 75%, rgba(255,120,70,0.5) 82%, rgba(196,45,20,0.20) 90%, transparent 100%);
-    filter: blur(24px);
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif;font-weight:300;letter-spacing:-0.01em}
+  .red{color:var(--red)}
+  .label{
+    font-size:12px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;
+    color:var(--red);display:inline-flex;align-items:center;gap:12px;
   }
-  .glow { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; z-index: 0; }
+  .label::before{content:"";width:26px;height:1px;background:var(--red);display:inline-block}
 
-  /* ---------- duotone artístico ---------- */
-  .duo { position: relative; overflow: hidden; background: #0A0708; }
-  .duo img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.28) brightness(1.08); transition: filter .6s ease, transform 1.2s ease; }
-  .duo::after {
-    content: ""; position: absolute; inset: 0; pointer-events: none;
-    background: linear-gradient(150deg, #FF6A3D 0%, var(--vermelho) 48%, #7d1608 100%);
-    mix-blend-mode: multiply;
+  /* nav */
+  nav{display:flex;justify-content:space-between;align-items:center;padding:32px 0}
+  .logo img{height:30px;display:block}
+  .tag{
+    font-size:12.5px;color:var(--muted);letter-spacing:0.04em;
+    border:1px solid var(--line);border-radius:100px;padding:8px 18px;font-weight:400;
   }
-  .duo::before {
-    content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 2;
-    background: linear-gradient(to top, rgba(10,7,8,0.85) 0%, rgba(10,7,8,0) 55%);
+  .tag b{color:var(--ink);font-weight:500}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:1.08fr 0.92fr;gap:70px;align-items:center;padding:70px 0 110px}
+  .hero .label{margin-bottom:30px}
+  h1{font-size:clamp(40px,5.4vw,68px);line-height:1.04}
+  h1 em{font-style:italic;font-weight:400;color:var(--red)}
+  .hero p{max-width:440px;margin-top:30px;color:var(--muted);font-size:17px;font-weight:300}
+  .actions{display:flex;gap:14px;margin-top:42px;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+    font-size:14.5px;font-weight:500;padding:15px 28px;border-radius:100px;
+    transition:transform .3s ease,background .3s ease,color .3s ease,border-color .3s ease;
+    letter-spacing:0.01em;
   }
-  .duo:hover img { transform: scale(1.04); }
+  .btn-solid{background:var(--ink);color:#F6F5F3}
+  .btn-solid:hover{background:var(--red);transform:translateY(-2px)}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-2px)}
+  .btn .arw{font-size:15px;opacity:.8}
 
-  /* ---------- nav ---------- */
-  nav { display: flex; justify-content: space-between; align-items: center; padding: 26px 0; }
-  .logo img { height: 38px; display: block; filter: drop-shadow(0 4px 18px rgba(240,85,42,0.35)); }
-  .pill {
-    display: inline-flex; align-items: center; gap: 8px;
-    border: 1px solid var(--borda); background: rgba(255,255,255,0.03);
-    border-radius: 999px; padding: 8px 18px; font-size: 13px; font-weight: 500; color: var(--suave); backdrop-filter: blur(6px);
+  .shot{position:relative}
+  .shot img{
+    width:100%;display:block;border-radius:6px;
+    filter:grayscale(0.35) contrast(1.02);
+    aspect-ratio:4/5;object-fit:cover;
   }
-  .pill b { color: var(--texto); font-weight: 600; }
-  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--laranja); box-shadow: 0 0 10px var(--laranja); }
-
-  /* ---------- HERO editorial ---------- */
-  .hero { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 44px; align-items: center; padding: 56px 0 96px; }
-  .hero-kicker { font-size: 12.5px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--laranja); margin-bottom: 22px; }
-  .hero h1 {
-    font-family: 'Archivo', sans-serif; font-weight: 900;
-    font-size: clamp(42px, 6.6vw, 82px); line-height: 0.94; letter-spacing: -0.02em; text-transform: uppercase;
+  .shot figcaption{
+    margin-top:16px;font-size:12.5px;color:var(--muted);letter-spacing:0.02em;
+    display:flex;justify-content:space-between;
   }
-  .hero h1 .out {
-    color: transparent; -webkit-text-stroke: 1.4px rgba(242,238,236,0.55);
+  .shot figcaption b{color:var(--ink);font-weight:500}
+
+  /* sections */
+  section{padding:100px 0;position:relative}
+  .divider{height:1px;background:var(--line-soft);border:0}
+  .two{display:grid;grid-template-columns:0.8fr 1.2fr;gap:60px;align-items:start}
+  h2{font-size:clamp(30px,3.6vw,44px);line-height:1.12}
+  .lede{font-size:19px;color:var(--ink);font-weight:300;line-height:1.6}
+  .lede + .lede{margin-top:22px}
+  .lede b{font-weight:500}
+  .muted{color:var(--muted)}
+
+  /* pilares */
+  .pilares{margin-top:20px;border-top:1px solid var(--line-soft)}
+  .pilar{
+    display:grid;grid-template-columns:80px 1fr 1.1fr;gap:30px;align-items:baseline;
+    padding:30px 4px;border-bottom:1px solid var(--line-soft);
+    transition:padding-left .35s ease;
   }
-  .hero h1 .grad {
-    background: linear-gradient(100deg, #FF7A4D 0%, var(--laranja) 45%, var(--brasa) 100%);
-    -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-stroke: 0;
+  .pilar:hover{padding-left:16px}
+  .pilar .n{font-family:'Fraunces',serif;font-weight:300;font-size:26px;color:var(--red)}
+  .pilar h3{font-size:20px;font-weight:500;font-family:'Inter',sans-serif;letter-spacing:-0.01em}
+  .pilar p{font-size:14.5px;color:var(--muted);font-weight:300}
+
+  /* photo band */
+  .band{position:relative;margin:0 0;border-radius:8px;overflow:hidden}
+  .band img{width:100%;display:block;filter:grayscale(0.4) contrast(1.03);aspect-ratio:16/8;object-fit:cover;object-position:center 30%}
+  .band .cap{
+    position:absolute;left:0;bottom:0;right:0;padding:48px 44px;
+    background:linear-gradient(to top,rgba(12,10,8,0.82),transparent);color:#F2F0EC;
   }
-  .hero p { max-width: 460px; margin: 28px 0 0; color: var(--suave); font-size: 16.5px; }
-  .cta-row { display: flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 10px; border-radius: 999px; padding: 15px 30px;
-    font-size: 15px; font-weight: 600; text-decoration: none; transition: transform .25s ease, box-shadow .25s ease;
-  }
-  .btn-primario { background: linear-gradient(120deg, #FF6A3D, var(--laranja) 55%, var(--brasa)); color: #fff; box-shadow: 0 8px 32px rgba(240,85,42,0.35); }
-  .btn-primario:hover { transform: translateY(-2px); box-shadow: 0 14px 44px rgba(240,85,42,0.5); }
-  .btn-fantasma { border: 1px solid var(--borda); color: var(--texto); background: rgba(255,255,255,0.02); }
-  .btn-fantasma:hover { border-color: rgba(255,255,255,0.28); transform: translateY(-2px); }
-  .btn .arw { display:inline-flex; width:24px;height:24px;border-radius:50%; align-items:center;justify-content:center; font-size:13px; }
-  .btn-primario .arw { background: rgba(255,255,255,0.22); }
+  .band .cap .label{color:#FF8A7A}
+  .band .cap .label::before{background:#FF8A7A}
+  .band .cap p{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(24px,3vw,34px);line-height:1.2;margin-top:16px;max-width:560px}
 
-  .hero-foto { position: relative; }
-  .hero-foto .duo { aspect-ratio: 4/5; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); }
-  .hero-foto .n {
-    position: absolute; left: -14px; top: -22px; z-index: 4;
-    font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 64px; line-height: 1;
-    color: transparent; -webkit-text-stroke: 1.6px rgba(240,85,42,0.9);
-  }
-  .hero-foto .vtxt {
-    position: absolute; right: -30px; top: 50%; z-index: 4;
-    writing-mode: vertical-rl; transform: rotate(180deg) translateX(0);
-    font-size: 11px; letter-spacing: 0.32em; text-transform: uppercase; color: var(--suave);
-  }
-  .hero-foto .cap {
-    position: absolute; left: 22px; bottom: 20px; z-index: 4;
-    font-size: 12.5px; letter-spacing: 0.06em; color: #EDE9E7;
-  }
-  .hero-foto .cap b { display: block; font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 17px; letter-spacing: 0.02em; }
+  /* investimento */
+  .invest{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:56px;max-width:900px;margin:56px auto 0}
+  .invest-top{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;border-bottom:1px solid var(--line-soft);padding-bottom:34px}
+  .invest-top h3{font-size:28px;font-weight:400}
+  .invest-top .plano-sub{color:var(--muted);font-size:15px;margin-top:6px;font-weight:300}
+  .price-wrap{text-align:right}
+  .price-de{font-size:15px;color:var(--muted);font-weight:300}
+  .price-de s{text-decoration-color:var(--red);text-decoration-thickness:1.5px}
+  .price{font-family:'Fraunces',serif;font-weight:400;font-size:48px;line-height:1;letter-spacing:-0.02em;margin-top:2px}
+  .price span{font-family:'Inter',sans-serif;font-size:15px;font-weight:400;color:var(--muted)}
+  .save{display:inline-block;margin-top:12px;font-size:12.5px;font-weight:500;color:var(--red);border:1px solid rgba(229,37,31,0.35);background:rgba(229,37,31,0.06);border-radius:100px;padding:6px 14px;letter-spacing:0.02em}
+  .incl{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:2px 40px;margin:34px 0 40px}
+  .incl li{font-size:15px;padding:11px 0 11px 28px;position:relative;color:var(--ink);font-weight:400;border-bottom:1px solid var(--line-soft)}
+  .incl li::before{content:"";position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:50%;background:var(--red)}
+  .invest .btn-solid{width:100%;justify-content:center;padding:17px}
+  .validade{max-width:900px;margin:22px auto 0;display:flex;gap:14px;align-items:center;color:var(--muted);font-size:13.5px;font-weight:300;justify-content:center;text-align:center}
+  .validade b{color:var(--ink);font-weight:500}
 
-  /* ---------- section base ---------- */
-  section { padding: 92px 0; position: relative; }
-  .tag-sec { display: inline-block; font-size: 12.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--laranja); margin-bottom: 16px; }
-  h2 { font-family: 'Archivo', sans-serif; font-size: clamp(30px, 4.4vw, 54px); font-weight: 900; letter-spacing: -0.02em; line-height: 1.02; text-transform: uppercase; }
-  .grad-t { background: linear-gradient(100deg, #FF7A4D, var(--laranja) 50%, var(--brasa)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .out-t { color: transparent; -webkit-text-stroke: 1.2px rgba(242,238,236,0.5); }
-  .sub-sec { color: var(--suave); max-width: 560px; margin-top: 16px; font-size: 16px; }
+  /* compromisso */
+  .compromisso{text-align:center}
+  .compromisso .big{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(26px,3.4vw,40px);line-height:1.3;max-width:920px;margin:36px auto 0}
+  .compromisso .big em{font-style:italic;color:var(--red)}
+  .compromisso .small{max-width:640px;margin:26px auto 0;color:var(--muted);font-weight:300;font-size:17px}
 
-  /* ---------- objetivo ---------- */
-  .obj-box {
-    margin-top: 40px; border: 1px solid var(--borda);
-    background: linear-gradient(180deg, rgba(240,85,42,0.07), rgba(255,255,255,0.02));
-    border-radius: 22px; padding: 46px 44px;
-  }
-  .obj-box p { font-size: 17.5px; color: #D9D5D2; max-width: 780px; }
-  .obj-box p + p { margin-top: 18px; }
-  .obj-box b { color: var(--texto); font-weight: 600; }
+  /* cta / footer */
+  .cta{text-align:center;padding:110px 0 90px}
+  .cta h2{max-width:720px;margin:0 auto}
+  .cta p{color:var(--muted);font-weight:300;margin:20px auto 38px;max-width:460px}
+  footer{border-top:1px solid var(--line-soft);padding:34px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+  footer .logo img{height:24px;opacity:.9}
+  footer span{font-size:12.5px;color:var(--muted);letter-spacing:0.06em}
 
-  /* ---------- pilares ---------- */
-  .grid-pilares { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 52px; }
-  .card { position: relative; background: var(--card); border: 1px solid var(--borda); border-radius: 18px; padding: 34px 26px 28px; transition: transform .3s ease, border-color .3s ease; overflow: hidden; }
-  .card:hover { transform: translateY(-5px); border-color: rgba(240,85,42,0.45); }
-  .card .num { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 40px; line-height: 1; color: transparent; -webkit-text-stroke: 1.4px rgba(240,85,42,0.85); display: block; margin-bottom: 18px; }
-  .card h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 9px; }
-  .card p { font-size: 14px; color: var(--suave); }
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.on{opacity:1;transform:none}
 
-  /* ---------- banda foto trabalho ---------- */
-  .banda-foto { position: relative; margin: 30px 0; min-height: 460px; display: flex; align-items: flex-end; }
-  .banda-foto .duo { position: absolute; inset: 0; border-radius: 26px; }
-  .banda-foto .duo::before { background: linear-gradient(105deg, rgba(10,7,8,0.92) 8%, rgba(10,7,8,0.35) 52%, rgba(10,7,8,0) 100%); }
-  .banda-foto .conteudo { position: relative; z-index: 4; padding: 52px 48px; max-width: 640px; }
-  .banda-foto .n2 { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 22px; letter-spacing: 0.02em; color: var(--laranja); }
-  .banda-foto h3 { font-family: 'Archivo', sans-serif; font-weight: 900; text-transform: uppercase; font-size: clamp(30px, 4.4vw, 52px); line-height: 0.98; letter-spacing: -0.02em; margin: 10px 0 16px; }
-  .banda-foto p { color: #D6D2CF; font-size: 16px; max-width: 440px; }
-
-  /* ---------- investimento ---------- */
-  #investimento .centro { text-align: center; }
-  .ancora { margin: 20px auto 0; color: var(--suave); font-size: 16.5px; max-width: 600px; }
-  .ancora s { color: #EDE9E7; font-weight: 600; text-decoration-color: var(--laranja); text-decoration-thickness: 2px; }
-  .plano-solo { max-width: 620px; margin: 52px auto 0; border-radius: 30px; padding: 3px; background: linear-gradient(160deg, #FF7A4D, var(--laranja) 45%, var(--brasa)); box-shadow: 0 30px 80px rgba(240,85,42,0.28); }
-  .plano-solo-in { background: #0C0809; border-radius: 27px; padding: 46px 44px; text-align: left; position: relative; overflow: hidden; }
-  .plano-solo-in .halo { position: absolute; top: -70px; right: -70px; width: 240px; height: 240px; border-radius: 50%; background: radial-gradient(closest-side, rgba(240,85,42,0.4), transparent); pointer-events: none; }
-  .selo { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--laranja); border: 1px solid rgba(240,85,42,0.5); background: rgba(240,85,42,0.08); border-radius: 999px; padding: 6px 15px; margin-bottom: 20px; }
-  .plano-solo-in h3 { font-family: 'Archivo', sans-serif; font-weight: 900; font-size: 30px; letter-spacing: -0.01em; text-transform: uppercase; }
-  .plano-solo-in .desc-plano { color: var(--suave); font-size: 15px; margin-top: 6px; }
-  .preco-de { margin-top: 24px; font-size: 15px; color: var(--suave); }
-  .preco-de s { color: #C9C4C1; text-decoration-color: var(--laranja); text-decoration-thickness: 2px; font-weight: 600; }
-  .preco { margin: 6px 0 4px; font-family: 'Archivo', sans-serif; font-size: 58px; font-weight: 900; letter-spacing: -0.03em; }
-  .preco small { font-size: 18px; font-weight: 500; color: var(--suave); letter-spacing: 0; font-family: 'Inter', sans-serif; }
-  .economia { display: inline-block; margin-top: 6px; background: rgba(240,85,42,0.12); border: 1px solid rgba(240,85,42,0.5); color: #FFB59B; border-radius: 999px; padding: 7px 16px; font-size: 13.5px; font-weight: 600; }
-  .plano-solo-in ul { list-style: none; margin: 30px 0 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 22px; }
-  .plano-solo-in li { font-size: 14.5px; padding: 8px 0 8px 26px; position: relative; color: #DAD6D3; }
-  .plano-solo-in li::before { content: ""; position: absolute; left: 0; top: 13px; width: 14px; height: 14px; border-radius: 50%; background: rgba(240,85,42,0.15); border: 1px solid rgba(240,85,42,0.6); }
-  .plano-solo-in li::after { content: ""; position: absolute; left: 4.5px; top: 17px; width: 5px; height: 3px; border-left: 1.5px solid var(--laranja); border-bottom: 1.5px solid var(--laranja); transform: rotate(-45deg); }
-  .plano-solo-in .btn { justify-content: center; width: 100%; padding: 16px; }
-
-  .validade { margin: 60px auto 0; max-width: 720px; border: 1px solid rgba(240,85,42,0.35); background: rgba(240,85,42,0.05); border-radius: 22px; padding: 28px 34px; display: flex; align-items: center; gap: 26px; flex-wrap: wrap; text-align: left; }
-  .validade .data { font-family: 'Archivo', sans-serif; font-size: 30px; font-weight: 900; letter-spacing: -0.02em; color: var(--laranja); white-space: nowrap; }
-  .validade p { font-size: 14.5px; color: var(--suave); flex: 1; min-width: 260px; }
-  .validade p b { color: var(--texto); }
-
-  /* ---------- compromisso ---------- */
-  .compromisso { text-align: center; }
-  .frase-grande { font-family: 'Inter', sans-serif; font-size: clamp(22px, 3.1vw, 33px); font-weight: 600; letter-spacing: -0.02em; line-height: 1.34; max-width: 840px; margin: 38px auto 0; color: #E7E3E0; }
-  .frase-grande b { color: var(--laranja); }
-
-  /* ---------- cta final ---------- */
-  .banda-final { position: relative; margin-top: 96px; padding: 100px 24px 66px; text-align: center; background: linear-gradient(to top, rgba(196,45,20,0.5) 0%, rgba(240,85,42,0.16) 45%, transparent 100%); }
-  .banda-final h2 { max-width: 760px; margin: 0 auto; }
-  .banda-final p { color: var(--suave); margin: 18px auto 34px; max-width: 480px; }
-  footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding: 34px 0 10px; margin-top: 62px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12.5px; color: var(--suave); letter-spacing: 0.06em; }
-
-  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
-  .reveal.on { opacity: 1; transform: none; }
-
-  @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; gap: 40px; padding: 30px 0 60px; }
-    .hero-foto { max-width: 420px; margin: 0 auto; width: 100%; }
-    .hero-foto .vtxt { display: none; }
-    .grid-pilares { grid-template-columns: 1fr; }
-    .plano-solo-in ul { grid-template-columns: 1fr; }
-    section { padding: 62px 0; }
-    nav .pill { display: none; }
-    .obj-box { padding: 32px 24px; }
-    .plano-solo-in { padding: 34px 26px; }
-    .banda-foto .conteudo { padding: 40px 28px; }
-    .cta-row .btn { width: 100%; max-width: 320px; justify-content: center; }
+  @media(max-width:900px){
+    .wrap{padding:0 24px}
+    .hero{grid-template-columns:1fr;gap:44px;padding:40px 0 70px}
+    .shot{max-width:420px}
+    .two{grid-template-columns:1fr;gap:26px}
+    .pilar{grid-template-columns:48px 1fr;gap:16px 18px}
+    .pilar p{grid-column:2}
+    .incl{grid-template-columns:1fr}
+    .invest{padding:34px 24px}
+    .invest-top{flex-direction:column}
+    .price-wrap{text-align:left}
+    section{padding:66px 0}
+    .band .cap{padding:32px 24px}
+    .actions .btn{flex:1;justify-content:center}
   }
 </style>
 </head>
 <body>
 
-<div class="arco-topo"></div>
-
 <div class="wrap">
   <nav>
-    <div class="logo"><img src="logo-vox-white.png" alt="VOX"></div>
-    <div class="pill"><span class="dot"></span> Proposta válida até <b>&nbsp;16/07/2026</b></div>
+    <a class="logo" href="#"><img src="logo.png" alt="VOX"></a>
+    <span class="tag">Proposta · válida até <b>16.07.2026</b></span>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="reveal on">
-      <div class="hero-kicker">Posicionamento Estratégico · VOX</div>
-      <h1>
-        <span class="out">Uma marca</span><br>
-        que <span class="grad">transcende</span><br>
-        a odontologia
-      </h1>
-      <p>Preparada especialmente para o <b style="color:var(--texto)">Dr. Fábio Tranches</b> — autoridade, reputação e uma presença que o consolida como referência nacional.</p>
-      <div class="cta-row">
-        <a class="btn btn-primario" href="#investimento">Ver o investimento <span class="arw">↗</span></a>
-        <a class="btn btn-fantasma" href="#pilares">Conhecer o plano</a>
+      <span class="label">Posicionamento Estratégico</span>
+      <h1>Construindo uma marca que <em>transcende</em> a odontologia.</h1>
+      <p>Preparado especialmente para o Dr. Fábio Tranches — autoridade, reputação e uma presença que consolidam uma referência nacional.</p>
+      <div class="actions">
+        <a class="btn btn-solid" href="#investimento">Ver o investimento <span class="arw">→</span></a>
+        <a class="btn btn-ghost" href="#plano">Conhecer o plano</a>
       </div>
     </div>
-    <div class="hero-foto reveal on">
-      <span class="n">01</span>
-      <span class="vtxt">Dr. Fábio Tranches · Instituto Tranches</span>
-      <div class="duo">
-        <img src="dr-portrait.jpg" alt="Dr. Fábio Tranches">
-      </div>
-      <div class="cap"><b>Dr. Fábio Tranches</b>Instituto Tranches</div>
-    </div>
+    <figure class="shot reveal on">
+      <img src="dr-portrait.jpg" alt="Dr. Fábio Tranches">
+      <figcaption><b>Dr. Fábio Tranches</b><span>Instituto Tranches</span></figcaption>
+    </figure>
   </header>
 </div>
 
+<div class="wrap"><hr class="divider"></div>
+
 <!-- OBJETIVO -->
 <section id="objetivo">
-  <div class="glow" style="width:480px;height:480px;background:rgba(196,45,20,0.35);top:0;left:-240px;"></div>
-  <div class="wrap">
-    <span class="tag-sec reveal">O objetivo</span>
-    <h2 class="reveal">Mais que presença digital.<br><span class="out-t">Autoridade de referência.</span></h2>
-    <div class="obj-box reveal">
-      <p>Nosso objetivo é consolidar o <b>Dr. Fábio Tranches</b> como uma das principais referências da odontologia brasileira. Trabalhamos a construção da <b>marca pessoal</b>, da <b>reputação</b> e da <b>autoridade</b> — criando oportunidades que vão muito além das redes sociais.</p>
-      <p>Ao final deste processo, queremos que o nome <b>Dr. Fábio Tranches</b> tenha o mesmo peso e reconhecimento que hoje possui o <b>Instituto Tranches</b>.</p>
+  <div class="wrap two">
+    <div class="reveal">
+      <span class="label">O objetivo</span>
+      <h2 style="margin-top:20px">Mais que presença digital.</h2>
+    </div>
+    <div class="reveal">
+      <p class="lede">Consolidar o <b>Dr. Fábio Tranches</b> como uma das principais referências da odontologia brasileira — trabalhando a construção da <b>marca pessoal</b>, da <b>reputação</b> e da <b>autoridade</b>, com oportunidades que vão muito além das redes sociais.</p>
+      <p class="lede muted">Ao final deste processo, o nome Dr. Fábio Tranches terá o mesmo peso e reconhecimento que hoje possui o Instituto Tranches.</p>
     </div>
   </div>
 </section>
 
-<!-- PILARES -->
-<section id="pilares">
-  <div class="glow" style="width:560px;height:560px;background:rgba(240,85,42,0.16);top:120px;right:-280px;"></div>
-  <div class="wrap">
-    <span class="tag-sec reveal">Nosso plano de ação</span>
-    <h2 class="reveal">A estratégia sobre <span class="grad-t">seis pilares</span></h2>
-    <p class="sub-sec reveal">Cada frente reforça a outra — juntas, constroem uma marca sólida, respeitada e reconhecida em todo o Brasil.</p>
+<div class="wrap"><hr class="divider"></div>
 
-    <div class="grid-pilares">
-      <div class="card reveal"><span class="num">01</span><h3>Posicionamento Estratégico</h3><p>Definição clara de território, discurso e diferenciais que sustentam a marca do Dr. Fábio.</p></div>
-      <div class="card reveal" style="transition-delay:.05s"><span class="num">02</span><h3>Branding e Gestão de Imagem</h3><p>Construção e cuidado contínuo da identidade e da percepção pública da marca pessoal.</p></div>
-      <div class="card reveal" style="transition-delay:.1s"><span class="num">03</span><h3>Estratégia e Produção de Conteúdo</h3><p>Conteúdo que gera autoridade, educa e aproxima pacientes de todo o país.</p></div>
-      <div class="card reveal" style="transition-delay:.15s"><span class="num">04</span><h3>Assessoria de Imprensa</h3><p>Presença na mídia e em veículos relevantes, ampliando alcance e credibilidade.</p></div>
-      <div class="card reveal" style="transition-delay:.2s"><span class="num">05</span><h3>Turismo Odontológico</h3><p>Estruturação para atrair pacientes de outras regiões e do exterior ao seu atendimento.</p></div>
-      <div class="card reveal" style="transition-delay:.25s"><span class="num">06</span><h3>Expansão e Networking</h3><p>Conexões estratégicas que abrem novas oportunidades profissionais e de negócio.</p></div>
+<!-- PLANO -->
+<section id="plano">
+  <div class="wrap">
+    <div class="two reveal">
+      <div><span class="label">Plano de ação</span><h2 style="margin-top:20px">Seis pilares.</h2></div>
+      <p class="lede muted" style="align-self:center">Cada frente reforça a outra — juntas, constroem uma marca sólida, respeitada e reconhecida em todo o Brasil.</p>
+    </div>
+
+    <div class="pilares reveal">
+      <div class="pilar"><span class="n">01</span><h3>Posicionamento Estratégico</h3><p>Território, discurso e diferenciais que sustentam a marca.</p></div>
+      <div class="pilar"><span class="n">02</span><h3>Branding &amp; Gestão de Imagem</h3><p>Construção e cuidado contínuo da identidade e da percepção pública.</p></div>
+      <div class="pilar"><span class="n">03</span><h3>Estratégia &amp; Produção de Conteúdo</h3><p>Conteúdo que gera autoridade e aproxima pacientes de todo o país.</p></div>
+      <div class="pilar"><span class="n">04</span><h3>Assessoria de Imprensa</h3><p>Presença na mídia e em veículos relevantes, ampliando credibilidade.</p></div>
+      <div class="pilar"><span class="n">05</span><h3>Turismo Odontológico</h3><p>Estrutura para atrair pacientes de outras regiões e do exterior.</p></div>
+      <div class="pilar"><span class="n">06</span><h3>Expansão &amp; Networking</h3><p>Conexões estratégicas que abrem novas oportunidades profissionais.</p></div>
     </div>
   </div>
 </section>
 
-<!-- BANDA FOTO TRABALHO -->
+<!-- BAND -->
 <div class="wrap">
-  <div class="banda-foto reveal">
-    <div class="duo"><img src="dr-work.jpg" alt="Dr. Fábio Tranches em atendimento"></div>
-    <div class="conteudo">
-      <span class="n2">02 — A excelência que vira marca</span>
-      <h3>Feito para<br>a atenção</h3>
-      <p>A mesma precisão que define o seu trabalho clínico é o que vamos transformar em percepção pública: uma marca construída sobre confiança, técnica e experiência.</p>
+  <figure class="band reveal">
+    <img src="dr-work.jpg" alt="Dr. Fábio Tranches em atendimento">
+    <div class="cap">
+      <span class="label">A excelência que vira marca</span>
+      <p>A mesma precisão do trabalho clínico, transformada em autoridade e percepção pública.</p>
     </div>
-  </div>
+  </figure>
 </div>
 
 <!-- INVESTIMENTO -->
 <section id="investimento">
-  <div class="wrap centro">
-    <span class="tag-sec reveal">Investimento</span>
-    <h2 class="reveal">Plano <span class="grad-t">Executive Branding</span></h2>
-    <p class="ancora reveal">Contratadas separadamente, todas as frentes somariam <s>R$ 8.600/mês</s>. Integradas em um único plano, gerido de ponta a ponta pela VOX, você leva tudo por muito menos.</p>
-
-    <div class="plano-solo reveal">
-      <div class="plano-solo-in">
-        <div class="halo"></div>
-        <span class="selo">★ Plano completo · exclusivo</span>
-        <h3>Executive Branding</h3>
-        <p class="desc-plano">Gestão integral da marca, imagem e autoridade</p>
-        <div class="preco-de">de <s>R$ 8.600/mês</s></div>
-        <div class="preco">R$ 7.500<small>/mês</small></div>
-        <span class="economia">Você economiza R$ 1.100/mês</span>
-        <ul>
-          <li>Posicionamento Estratégico</li>
-          <li>Branding</li>
-          <li>Gestão de Imagem</li>
-          <li>Produção de Conteúdo</li>
-          <li>Assessoria de Imprensa</li>
-          <li>Turismo Odontológico</li>
-          <li>Networking Estratégico</li>
-          <li>Reuniões mensais</li>
-        </ul>
-        <a class="btn btn-primario" target="_blank" href="https://wa.me/5535998464545?text=Ol%C3%A1%2C%20VOX!%20Quero%20fechar%20o%20Plano%20Executive%20Branding%20(R%24%207.500%2Fm%C3%AAs)%20para%20o%20Dr.%20F%C3%A1bio%20Tranches.%20Vamos%20come%C3%A7ar%3F">Quero fechar o Executive Branding <span class="arw">↗</span></a>
-      </div>
+  <div class="wrap">
+    <div style="text-align:center">
+      <span class="label" style="justify-content:center">Investimento</span>
+      <h2 style="margin-top:20px">Plano <span class="red">Executive Branding</span></h2>
+      <p class="lede muted" style="max-width:560px;margin:16px auto 0">Contratadas separadamente, as frentes somariam R$ 8.600/mês. Integradas, você leva tudo por muito menos.</p>
     </div>
 
-    <div class="validade reveal">
-      <div>
-        <div style="font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--suave);margin-bottom:4px;">Condição válida até</div>
-        <div class="data">16/07/2026</div>
+    <div class="invest reveal">
+      <div class="invest-top">
+        <div>
+          <h3>Executive Branding</h3>
+          <p class="plano-sub">Gestão integral da marca, imagem e autoridade · reuniões mensais</p>
+        </div>
+        <div class="price-wrap">
+          <div class="price-de">de <s>R$ 8.600/mês</s></div>
+          <div class="price">R$ 7.500 <span>/mês</span></div>
+          <span class="save">Economia de R$ 1.100/mês</span>
+        </div>
       </div>
-      <p>A condição de <b>R$ 7.500/mês</b> é exclusiva desta proposta. Para garantir a dedicação que a construção de uma marca de referência exige, trabalhamos com um <b>número limitado de projetos por vez</b> — a vaga fica garantida na confirmação.</p>
+      <ul class="incl">
+        <li>Posicionamento Estratégico</li>
+        <li>Assessoria de Imprensa</li>
+        <li>Branding</li>
+        <li>Turismo Odontológico</li>
+        <li>Gestão de Imagem</li>
+        <li>Networking Estratégico</li>
+        <li>Produção de Conteúdo</li>
+        <li>Reuniões mensais</li>
+      </ul>
+      <a class="btn btn-solid" target="_blank" href="https://wa.me/5535998464545?text=Ol%C3%A1%2C%20VOX!%20Quero%20fechar%20o%20Plano%20Executive%20Branding%20(R%24%207.500%2Fm%C3%AAs)%20para%20o%20Dr.%20F%C3%A1bio%20Tranches.%20Vamos%20come%C3%A7ar%3F">Quero fechar o Executive Branding <span class="arw">→</span></a>
     </div>
+    <p class="validade reveal">Condição exclusiva desta proposta, válida até <b>16.07.2026</b> · trabalhamos com um número limitado de projetos por vez.</p>
   </div>
 </section>
+
+<div class="wrap"><hr class="divider"></div>
 
 <!-- COMPROMISSO -->
 <section class="compromisso">
-  <div class="glow" style="width:520px;height:520px;background:rgba(196,45,20,0.26);bottom:-160px;left:-200px;"></div>
   <div class="wrap">
-    <span class="tag-sec reveal">Nosso compromisso</span>
-    <h2 class="reveal">Não é só produzir conteúdo</h2>
-    <p class="frase-grande reveal">Estamos propondo construir uma marca que gere <b>autoridade</b>, atraia pacientes de todo o Brasil, fortaleça sua presença na mídia, amplie oportunidades e consolide o Dr. Fábio Tranches como uma das <b>maiores referências</b> da odontologia brasileira.</p>
-    <p class="frase-grande reveal" style="font-size:clamp(18px,2.3vw,22px);color:var(--suave);margin-top:24px;">Uma marca lembrada não pelos tratamentos que realiza, mas pela <b style="color:var(--texto)">autoridade, confiança e experiência</b> que representa.</p>
+    <span class="label" style="justify-content:center">Nosso compromisso</span>
+    <p class="big">Não é só produzir conteúdo. É construir uma marca que gere <em>autoridade</em>, atraia pacientes de todo o Brasil e consolide o Dr. Fábio Tranches entre as maiores referências da odontologia brasileira.</p>
+    <p class="small">Uma marca lembrada não pelos tratamentos que realiza, mas pela autoridade, confiança e experiência que representa.</p>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<div class="banda-final">
+<!-- CTA -->
+<div class="cta">
   <div class="wrap">
-    <h2 class="reveal">Pronto para construir uma marca que transcende a odontologia?</h2>
-    <p class="reveal">Fale com a VOX e comece hoje a consolidação do Dr. Fábio Tranches como referência nacional.</p>
-    <a class="btn btn-primario reveal" target="_blank" href="https://wa.me/5535998464545?text=Ol%C3%A1%2C%20VOX!%20Quero%20fechar%20o%20Plano%20Executive%20Branding%20(R%24%207.500%2Fm%C3%AAs)%20para%20o%20Dr.%20F%C3%A1bio%20Tranches.%20Vamos%20come%C3%A7ar%3F">Quero fechar com a VOX <span class="arw">↗</span></a>
+    <h2>Vamos construir essa marca?</h2>
+    <p>Fale com a VOX e comece hoje a consolidação do Dr. Fábio Tranches como referência nacional.</p>
+    <a class="btn btn-solid reveal" target="_blank" href="https://wa.me/5535998464545?text=Ol%C3%A1%2C%20VOX!%20Quero%20fechar%20o%20Plano%20Executive%20Branding%20(R%24%207.500%2Fm%C3%AAs)%20para%20o%20Dr.%20F%C3%A1bio%20Tranches.%20Vamos%20come%C3%A7ar%3F">Falar com a VOX <span class="arw">→</span></a>
     <footer>
-      <span>VOX · BRANDING & POSICIONAMENTO ESTRATÉGICO</span>
-      <span>2026</span>
+      <a class="logo" href="#"><img src="logo.png" alt="VOX"></a>
+      <span>Branding &amp; Posicionamento Estratégico · 2026</span>
     </footer>
   </div>
 </div>
 
 <script>
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal:not(.on)').forEach(el => obs.observe(el));
+  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}})},{threshold:0.12});
+  document.querySelectorAll('.reveal:not(.on)').forEach(el=>obs.observe(el));
 </script>
 </body>
 </html>
